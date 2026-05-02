@@ -1,3 +1,4 @@
+import AnimalCard from "@/Components/AnimalCard";
 
 
 const allAnimals = async() => {
@@ -13,7 +14,7 @@ const allAnimalsPage = async() => {
          all animals
          <div>
             {
-                animals.map(animal=> <h2> {animal.name} </h2>)
+                animals.map(animal=> <AnimalCard key={animal.id} animal={animal}></AnimalCard>)
             }
          </div>
         </div>
