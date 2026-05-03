@@ -10,9 +10,10 @@ const allAnimals = async() => {
 const allAnimalsPage = async() => {
     const animals = await allAnimals();
     return(
-        <div>
-         all animals
-         <div>
+        <div className="">
+            <h2 className="text-center mt-5 font-bold text-4xl">All Animals</h2>
+         
+         <div className="container mx-auto grid grid-cols-3 gap-4 mt-4">
             {
                 animals.map(animal=> <AnimalCard key={animal.id} animal={animal}></AnimalCard>)
             }
