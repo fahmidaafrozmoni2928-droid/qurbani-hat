@@ -19,7 +19,7 @@ const loginPage = () => {
     rememberMe: true,
     callbackURL: "/",
 });
-
+console.log(res, error);
    
     }
     return(

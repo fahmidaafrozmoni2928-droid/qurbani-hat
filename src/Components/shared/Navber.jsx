@@ -7,9 +7,9 @@ import logo from '@/assets/qurbani.jpg'
 import { authClient } from "@/lib/auth-client";
 
 const Navber = () => {
-    const {data: session} = authClient.useSession();
-    const user = session?.user
-    console.log(user);
+   // const {data: session} = authClient.useSession();
+   // const user = session?.user
+   // console.log(user);
     return(
         <div className="bg-slate-50 w-full shadow-sm">
           <div className=" navbar max-w-7xl mx-auto ">
