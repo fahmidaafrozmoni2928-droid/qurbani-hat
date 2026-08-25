@@ -2,15 +2,16 @@
 import { useForm } from "react-hook-form"
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
-
-
+import { FcGoogle } from "react-icons/fc";
+import { useRouter } from "next/navigation";
 
 
 const loginPage = () => {
+     const router = useRouter();
     const { register, handleSubmit, formState: { errors }} = useForm();
 
     const handleLogin = async(data) => {
-      
+
    console.log(data);
 
    const { data: res, error } = await authClient.signIn.email({
@@ -20,10 +21,27 @@ const loginPage = () => {
     callbackURL: "/",
 });
 console.log(res, error);
+
+if(error){
+    alert(error.message)
+ }
+ if(res){
+    alert("SignIn Successfull")
+     router.push("/");
+ }
+
    
     }
+
+    const handleGoogleLogin = async() => {
+            await authClient.signIn.social({
+                provider: "google"
+            })
+        }
+
     return(
-        <div className="container mx-auto min-h-[80vh] flex justify-center items-center bg-slate-100">
+        <div className="bg-green-100 w-full mt-5 py-5">
+        <div className="container mx-auto  flex justify-center items-center bg-green-100 py-6">
         <div className="p-4 rounded-lg bg-white">
             <h2 className="font-bold text-3xl text-center">Login</h2>
 
@@ -43,8 +61,20 @@ console.log(res, error);
 
 <button className="btn btn-neutral w-full">Login</button>
             </form>
-    <br></br>
-            <p>Don't have an account? <Link href={"/register"} className="text-red-500">Register</Link></p>
+
+<div className="flex justify-center items-center text-gray-500">
+    OR
+</div>
+<div>
+    <button onClick={handleGoogleLogin} className="btn bg-white text-black mt-4 w-full"><FcGoogle /> Continue with Google</button>
+</div>
+<div className="flex justify-center items-center">
+ <p className="text-gray-500">Don't have an account?<Link href={"/register"} className="text-blue-500">Register</Link></p>
+ </div>
+
+    
+            
+        </div>
         </div>
         </div>
     )

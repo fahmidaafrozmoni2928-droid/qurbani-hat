@@ -9,7 +9,7 @@
     "age": 3,
     "location": "Bogura",
     "description": "Healthy deshi cow suitable for Qurbani.",
-    "image": "https://en.wikipedia.org/wiki/Sahiwal_cattle",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cow.jpg",
     "category": "Large Animal"
   },
   {
@@ -48,7 +48,7 @@
     "age": 2,
     "location": "Rajshahi",
     "description": "Most popular Qurbani goat in Bangladesh.",
-    "image": "https://morningchores.com/black-bengal-goat/",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Local_Goat.jpg",
     "category": "Small Animal"
   },
   {
@@ -61,7 +61,7 @@
     "age": 3,
     "location": "Pabna",
     "description": "Large size premium goat.",
-    "image": "https://images.unsplash.com/photo-1598970434795-0c54fe7c0642?auto=format&fit=crop&w=800&q=60",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Goat.jpg",
     "category": "Small Animal"
   },
   {
@@ -74,7 +74,7 @@
     "age": 3,
     "location": "Chattogram",
     "description": "Fast-growing premium goat breed.",
-    "image": "https://images.unsplash.com/photo-1604933762023-7213af7ff7f4?auto=format&fit=crop&w=800&q=60",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Capra_aegagrus_hircus_qtl2.jpg",
     "category": "Small Animal"
   },
   {
@@ -87,7 +87,7 @@
     "age": 2,
     "location": "Rangpur",
     "description": "Healthy sheep for Qurbani.",
-    "image": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=60",
+    "image": "https://static.wixstatic.com/media/db5838_3033b4c585164d08a0e295e23e7b2bba~mv2.jpg/v1/fill/w_568%2Ch_670%2Cal_c%2Clg_1%2Cq_85%2Cenc_avif%2Cquality_auto/db5838_3033b4c585164d08a0e295e23e7b2bba~mv2.jpg",
     "category": "Small Animal"
   },
   {
@@ -100,7 +100,7 @@
     "age": 2,
     "location": "Dinajpur",
     "description": "Strong and healthy sheep.",
-    "image": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=60",
+    "image": "https://images.unsplash.com/photo-1484557985045-edf25e08da73?auto=format&fit=crop&w=800&q=80",
     "category": "Small Animal"
   },
   {
@@ -113,7 +113,7 @@
     "age": 3,
     "location": "Tangail",
     "description": "Well-fed healthy cow.",
-    "image": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=800&q=60",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Common_Cow.jpg",
     "category": "Large Animal"
   },
   {
@@ -126,7 +126,7 @@
     "age": 2,
     "location": "Comilla",
     "description": "Healthy premium goat for sacrifice.",
-    "image": "https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=800&q=60",
+    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A_Goat.JPG",
     "category": "Small Animal"
   }
 ]

@@ -1,3 +1,4 @@
+import BookingModal from "@/Components/BookingModal";
 import Image from "next/image";
 
 
@@ -8,9 +9,10 @@ const animalDetailsPage = async({params}) => {
     const animal = animals.find(a=> a.id.toString() ===animalId);
     console.log(animal);
     return(
-        <div className="container mx-auto min-h-[8vh] flex justify-center items-center mt-8">
+        <div className="bg-green-100 w-full mt-5  py-8">
+        <div className="container mx-auto min-h-[8vh] flex justify-center items-center ">
             <div className="card bg-base-100 object-cover shadow-sm">
-  
+
   <div className="card-body">
     <div>
         <Image src={animal.image} alt={animal.name} width={450} height={250}></Image>
@@ -31,12 +33,20 @@ const animalDetailsPage = async({params}) => {
     <p>Location: {animal.location} </p>
 
     </div>
-    
+
     <p className="font-bold text-green-800 text-xl">Price: ${animal.price} </p>
     <p className="text-gray-700"> {animal.description} </p>
-   
+
   </div>
-</div> 
+    <div className="card-actions justify-start m-3">
+    <BookingModal></BookingModal>
+</div>
+
+
+
+
+</div>
+        </div>
         </div>
     )
 }

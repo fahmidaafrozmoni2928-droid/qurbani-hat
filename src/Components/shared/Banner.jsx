@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Banner = () => {
     return(
-        <div className="">
+        <div className="bg-green-100 mt-10">
         <div className="container mx-auto min-h-[80vh] flex justify-center items-center space-x-5 ">
     
     <Image src={cow} alt="cow" width={800} height={600}></Image> 
@@ -21,7 +21,7 @@ const Banner = () => {
 
   <div className="mt-6">
     <Link href={"/all-animals"}>
-    <button className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl">
+    <button className="bg-green-700 hover:bg-green-600 text-white px-6 py-3 rounded-xl">
       Browse Animals
     </button>
     </Link>
