@@ -2,7 +2,7 @@ import AnimalCard from "@/Components/AnimalCard";
 
 
 const AllAnimalsPage = async () => {
-   const res = await fetch("http://localhost:3000/data/products.json");
+   const res = await fetch("/data/products.json");
 
    const animals = await res.json();
   console.log(animals);
