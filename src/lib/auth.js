@@ -8,7 +8,7 @@ import { mongodbAdapter } from "better-auth/adapters/mongodb";
 
 
 
-console.log("My URI:", process.env.MONGO_URI);
+//console.log("My URI:", process.env.MONGO_URI);
 const client = new MongoClient(process.env.MONGO_URI);
 await client.connect();
 const db = client.db();
