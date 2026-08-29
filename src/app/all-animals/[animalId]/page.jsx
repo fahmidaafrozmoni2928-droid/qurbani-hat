@@ -1,11 +1,23 @@
 import BookingModal from "@/Components/BookingModal";
 import Image from "next/image";
-
+import fs from "fs";
+import path from "path";
 
 const animalDetailsPage = async({params}) => {
     const {animalId} = await params;
-    const res = await fetch(`http://localhost:3000/data/products.json`);
-    const animals = await res.json();
+   // const res = await fetch(`http://localhost:3000/data/products.json`);
+  //  const animals = await res.json();
+
+
+   const filePath = path.join(
+      process.cwd(),
+      "public",
+      "data",
+      "products.json");
+  
+    
+   const fileData = fs.readFileSync(filePath, "utf-8");
+    const animals = JSON.parse(fileData);
     const animal = animals.find(a=> a.id.toString() ===animalId);
     console.log(animal);
     return(
