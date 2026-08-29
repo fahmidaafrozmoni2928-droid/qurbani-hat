@@ -5,8 +5,12 @@ import React from "react";
 
 import logo from '@/assets/qurbani.jpg'
 import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
+
 
 const Navber = () => {
+
+  const router = useRouter();
  const { 
         data: session, 
        
@@ -17,6 +21,7 @@ const Navber = () => {
 
     const handleSignOut = async() => {
 await authClient.signOut();
+ router.push("/");
     }
 
    
@@ -85,7 +90,7 @@ await authClient.signOut();
     }
     
    </li>
- <li> <Link href={'/logout'}><button onClick={handleSignOut} className="btn rounded-xl bg-red-400 text-white">Logout</button></Link></li>
+ <li> <button onClick={handleSignOut} className="btn rounded-xl bg-red-400 text-white">Logout</button></li>
 
       </>  : <>
       <li> <Link href={'/login'}><button className="btn rounded-xl bg-white text-green-700">Login</button></Link></li>
